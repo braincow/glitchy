@@ -15,6 +15,7 @@ pretty_env_logger = "0.3"
 directories = "2.0"
 reqwest = "0.9"
 serde = { version = "1.0",  features = ["derive"] }
+cursive = "0.12"
 local_oauth_client = { path = "/home/bcow/git/local-oauth-client" }
 
 # eof
