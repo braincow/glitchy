@@ -195,7 +195,6 @@ fn main() {
     siv.add_fullscreen_layer(
         // sequence of scrollable and with_id is meaningful since below in the loop we look for the inner_mut for it
         Dialog::around(
-//                Panel::new(TextView::empty().scrollable().with_id("chatlog")))
             LinearLayout::vertical()
                 .child(TextView::empty().scrollable().with_id("chatlog"))
                 .child(EditView::new().on_submit(send).with_id("message")))
@@ -219,6 +218,7 @@ fn main() {
             // if quit() activated we jump out here
             break;
         }
+        thread::sleep(Duration::from_millis(100));
     }
     info!("Glitchy is quitting.");
 }
