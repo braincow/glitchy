@@ -2,3 +2,5 @@
 **/*.rs.bk
 twitch.userid
 twitch.secret
+.env
+fubar.log
